@@ -29,7 +29,9 @@
     70%{top: 100px;}
     100%{top: 150px;}
 }
-
+b{
+    text-align: center;
+}
 #block{
     background-color: red;
     width: 20px;
