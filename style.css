@@ -48,3 +48,15 @@ b{
 p{
     text-align: center;
 }
+  @media only screen and (max-width:361px){
+    .game{
+        width: 328px;
+    }
+  }
+    @media only screen and (max-width:376px){
+    .game{
+        width: 328px;
+    }
+  }
+  
+
