@@ -11,7 +11,7 @@
     margin-top: 150px;
 }
 #character{
-    width: 80px;
+    width: 44px;
     height: 85px;
     position:relative;
     top: 150px;
@@ -31,7 +31,7 @@
 }
 
 #block{
-    background-color: blue;
+    background-color: red;
     width: 20px;
     height: 20px;
     position: relative;
