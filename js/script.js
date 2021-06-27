@@ -43,9 +43,3 @@ function getDifficulty(d)
 function getPage(){
     window.location.href = "pages/"+localStorage.getItem('subject')+"/"+localStorage.getItem('difficulty')+"/index.html";
 }
-$(window).load(function(){
-    if($("body").load("loader.html").fadeOut(5000)){
-        $("loader.html").hide();
-        $("index.html").show();
-    }
-});
