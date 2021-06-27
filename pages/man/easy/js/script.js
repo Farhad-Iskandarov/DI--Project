@@ -30,3 +30,17 @@ var checkDead = setInterval(function() {
         document.getElementById("scoreSpan").innerHTML = Math.floor(counter/120);
     }
 }, 10);
+
+
+document.onreadystatechange = function() {
+    setTimeout(function (){
+        if (document.readyState !== "complete") {
+            document.querySelector("body").style.visibility = "hidden";
+            document.querySelector("#loading").style.visibility = "visible";
+        } else {
+            document.querySelector("#loading").style.display = "none";
+            document.querySelector("body").style.visibility = "visible";
+        }
+    }, 3000);
+};
+
