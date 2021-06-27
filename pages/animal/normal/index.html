@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" onclick="jump()">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="img/fast.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DI-Project</title>
+	 <meta name="author" content="Farhad Isgandarov">
+	<link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/fast.png">
+</head>
+<style>
+    #character img{
+    width: 92px;
+    height: 81px;
+}
+
+#character{
+    width: 76px;
+    height: 85px;
+    position:relative;
+    top: 150px;
+}
+</style>
+<body>
+<audio autoplay>
+    <source src="music.mp3" type="audio/mp3">
+</audio>
+
+<div class="game">
+        <div id="character">
+        	<img src="img/qwer.gif" alt="">
+        </div>
+        <div id="block"></div>
+    </div>
+    <p style="font-size: 24px;">Score: <span id="scoreSpan"></span></p>
+   <p>Author - Farhad Isgandarov</p>
+    <p>&copy; 2020</p>
+</body>
+<script src="jss/script.js"></script>
+</html>

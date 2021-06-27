@@ -21,25 +21,8 @@
         text-decoration: none;
         color: black;
     }
-    a:hover{
-        text-decoration: none;
-        color: black;
-    }
-    .namebox a{
-        display: block;
 
-    }
-.subject:focus {
-  background-color: red;
-  font-size: 50px;
-}
-.difficulty:focus{
-    background-color: red;
-  font-size: 50px;
-}
     /*.settings p:nth-last-child(1) {
          font-family: 'Baloo Tammudu 2', cursive;
         font-size: 30px;
     } */
-
-    

@@ -30,22 +30,3 @@ var checkDead = setInterval(function() {
         document.getElementById("scoreSpan").innerHTML = Math.floor(counter/100);
     }
 }, 10);
-function getSubject(d)
-{
-    localStorage.setItem("subject", d.getAttribute("data-name"));
-}
-
-function getDifficulty(d)
-{
-    localStorage.setItem("difficulty", d.getAttribute("data-name"));
-}
-
-function getPage(){
-    window.location.href = "pages/"+localStorage.getItem('subject')+"/"+localStorage.getItem('difficulty')+"/index.html";
-}
-$(window).load(function(){
-    if($("body").load("loader.html").fadeOut(5000)){
-        $("loader.html").hide();
-        $("index.html").show();
-    }
-});

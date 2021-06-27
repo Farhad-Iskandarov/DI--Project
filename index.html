@@ -12,6 +12,14 @@
     <title>Document</title>
 </head>
 <body>
+    <script>
+        $(window).load(function(){
+    if($("body").load("loader.html").fadeOut(5000)){
+        $("loader.html").hide();
+        $("index.html").show();
+    }
+});
+    </script>
     <div class="main container">
 
               <div class="title">
@@ -36,9 +44,10 @@
                  </div>
 
                  <div class="namebox">
-                     <p>MAN</p>
-                     <p>WOMAN</p>
-                     <p>ANIMAL</p>
+            <a class="subject" onclick="getSubject(this)" data-name="man" href="javascript:;">MAN</a>
+            <a class="subject" onclick="getSubject(this)" data-name="woman" href="javascript:;">WOMAN</a>
+            <a class="subject" onclick="getSubject(this)" data-name="animal" href="javascript:;">ANIMAL</a>
+           
                  </div>
              </div>
 
@@ -47,15 +56,15 @@
             <p style="font-family: 'Baloo Tammudu 2', cursive;font-size: 28px;margin-top: 80px;">*** Choose the Difficulty ***</p>
 
                  <div class="namebox">
-                     <p>EASY</p>
-                     <p>MEDIUM</p>
-                     <p>HARD</p>
+                     <a class="difficulty" onclick="getDifficulty(this)" data-name="hard" href="javascript:;">HARD</a>
+                <a class="difficulty" onclick="getDifficulty(this)" data-name="normal" href="javascript:;">Normal</a>
+                <a class="difficulty" onclick="getDifficulty(this)" data-name="easy" href="javascript:;">Easy</a>
                  </div>
              </div>
 
 
              <div class="wrap">
-                  <button onclick="location.href='main.html'" class="button" style="margin-top: 31px;">START</button>
+                  <button id="start" onclick="getPage()" class="button" style="margin-top: 31px;">START</button>
             </div>
          
 <p style="margin-top: 200px;">burada sizin reklaminiz ola bilerdi :(</p>
